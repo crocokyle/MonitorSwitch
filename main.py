@@ -33,3 +33,4 @@ if __name__ == '__main__':
     for monitor in get_monitors():
         with monitor:
             set_work(monitor)
+            set_personal(monitor)
