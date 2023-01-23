@@ -13,7 +13,7 @@ def set_work(monitor):
     elif monitor_data.get('model') == Monitors.ASUS:
         monitor.set_input_source("HDMI1")
 
-def set_work(monitor):
+def set_personal(monitor):
     if (monitor_data := monitor.get_vcp_capabilities()).get('model') == Monitors.LG:
         monitor.set_input_source("DVI1")
     elif monitor_data.get('model') == Monitors.ASUS:
@@ -32,5 +32,5 @@ def brute_force_inputs(monitor):
 if __name__ == '__main__':
     for monitor in get_monitors():
         with monitor:
-            set_work(monitor)
+            set_personal(monitor)
             #set_work(monitor)
