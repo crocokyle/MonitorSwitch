@@ -1,5 +1,5 @@
 from triggers import Trigger, KeyboardTrigger
-from main import set_work
+from main import set_work, set_personal
 from monitorcontrol import get_monitors
 
 import time
